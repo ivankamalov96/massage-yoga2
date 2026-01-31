@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Тренер по йоге, массажист и схемотерапевт - улучшите своё здоровье и самочувствие">
+    <title>Тренер по Йоге и Массажист</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Добро пожаловать в мир здоровья и гармонии</h1>
+            <p>Йога, массаж, схемотерапия - пути к вашему лучшему состоянию</p>
+            <a href="#services" class="cta-button">Наши Услуги</a>
+        </div>
+    </header>
+
+    <section id="services">
+        <h2>Наши Услуги</h2>
+        <div class="service-section" id="yoga">
+            <h3>Йога</h3>
+            <p>Откройте для себя внутреннюю гармонию через йогу. Наши занятия подходят для всех уровней подготовки.</p>
+            <button onclick="showDetails('yoga')">Подробнее</button>
+        </div>
+        <div class="service-section" id="massage">
+            <h3>Массаж</h3>
+            <p>Устали от стресса? Мы предлагаем расслабляющий и лечебный массаж для восстановления баланса в теле.</p>
+            <button onclick="showDetails('massage')">Подробнее</button>
+        </div>
+        <div class="service-section" id="schemotherapy">
+            <h3>Схемотерапия</h3>
+            <p>Схемотерапия - уникальная методика для восстановления психоэмоционального состояния и улучшения жизни.</p>
+            <button onclick="showDetails('schemotherapy')">Подробнее</button>
+        </div>
+    </section>
+
+    <section id="more-details" class="hidden">
+        <h2>Подробности Услуг</h2>
+        <div id="details-content"></div>
+        <button onclick="closeDetails()">Закрыть</button>
+    </section>
+
+    <footer>
+        <p>Контакт: email@example.com | Телефон: +7 (123) 456-7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
